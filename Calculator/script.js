@@ -1,6 +1,7 @@
 let boxes=document.querySelectorAll(".box");
 let output=document.querySelector("#output");
 let display=document.querySelector("#display");
+let operators=document.querySelectorAll(".operators");
 
 let nums="";
 Array.from(boxes).forEach((box)=>{  // an array of boxes is created and for each box, an event listener is added
@@ -33,7 +34,25 @@ Array.from(boxes).forEach((box)=>{  // an array of boxes is created and for each
         else{
             nums+=e.target.innerText; 
             display.value=nums;
+            if(e.target.innerText=='+' || e.target.innerText=='-' || e.target.innerText=='*' || e.target.innerText=='/' || e.target.innerText=='.'){
+                disable_btns();  // disables the operators after clicked on
+            }
+            else{
+                enable_btns();  // when any other button is clicked, the operators buttons are enabled back
+            }
         }
         
     });
 });
+
+const disable_btns=()=>{
+    for(let boxes of operators){
+        boxes.disabled=true;
+    }
+};
+
+const enable_btns=()=>{
+    for(let boxes of operators){
+        boxes.disabled=false;
+    }
+};
