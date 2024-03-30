@@ -47,7 +47,7 @@ Array.from(boxes).forEach((box)=>{  // an array of boxes is created and for each
                 num=parseFloat(output.innerText); // if we want to find the square root after some operations
             }
             nums=Math.sqrt(num);
-            display.value=`sqr(${num})`;
+            display.value=`√${num}`;
             output.innerText=nums;
         }
         else{
