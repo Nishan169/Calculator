@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-color: rgb(163, 225, 121);
+}
+h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 550px;
+    width: 320px;
+    background-color: rgb(24, 24, 29);
+}
+.screen{
+    margin-top: 2px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 237px;
+    width: 320px;
+    background-color: rgb(37, 37, 39);
+    
+}
+.keys{
+    height: 300px;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.box{
+    height: 60px;
+    width: 78px;
+    background-color: rgb(48, 48, 73); 
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(59, 59, 80);
+}
+#equals:hover{
+    background-color: rgb(231, 144, 215);
+}
+#equals{
+    background-color: rgb(235, 112, 212);
+}
+#output{
+    color: white;
+    font-size: 35px;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 5px;
+    /* background-color: white; */
+}
+#display{
+    height: 50px;
+    width: 310px;
+    background-color: rgb(37, 37, 39);
+    /* background-color: white; */
+    border: none;
+    margin-top: 90px;
+    font-size: 30px;
+    text-align: right;
+    color: grey;
+}
