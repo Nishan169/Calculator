@@ -7,7 +7,7 @@ let nums="";
 Array.from(boxes).forEach((box)=>{  // an array of boxes is created and for each box, an event listener is added
     box.addEventListener("click",(e)=>{
         if(e.target.innerText=="="){
-            if(nums[0]=='+' || nums[0]=='-' || nums[0]=='*' || nums[0]=='/' || nums[nums.length-1]=='+' || nums[nums.length-1]=='-' || nums[nums.length-1]=='*' || nums[nums.length-1]=='/'){
+            if(nums[0]=='*' || nums[0]=='/' || nums[nums.length-1]=='+' || nums[nums.length-1]=='-' || nums[nums.length-1]=='*' || nums[nums.length-1]=='/'){
                 nums="Error";
             }
             else{
